@@ -17,8 +17,14 @@ header{
     margin: 10px 0;
 }
 main{
-    background-color: #f9d198a6;
+    background-color: #ffffff;
     grid-area: main;
+}
+main h1{
+    color: #c52024;
+}
+main p{
+    color: #454a47;
 }
 main h1, main p{
     text-align: center;
@@ -46,3 +52,21 @@ nav div span{
 nav img{
     width: 40px;
 }
+section{
+    align-items: center;
+    grid-area: section;
+    display: flex;
+    flex-direction: column;
+}
+section .funcionarios{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+section .funcionarios div img{
+    width: 100px;
+}
+@media
