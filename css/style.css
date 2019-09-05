@@ -9,14 +9,23 @@ body{
     margin: 0%;
 }
 header{
-    background-image: url(../images/bob-hamburguer-siri.png);
-    background-size: cover;
+    background-image: url(../images/logo-siri.png);
+    background-repeat: no-repeat;
+    background-position: center;
     grid-area: banner;
-    height: 200px;
+    height: 160px;
+    margin: 10px 0;
+}
+main{
+    background-color: #e25054;
+    grid-area: main;
+}
+main h1, main p{
+    text-align: center;
 }
 nav{
     align-items: center;
-    background-color: #edec64;
+    background-color: #e25054;
     display: flex;
     grid-area: nav;
     height: 60px;
@@ -35,5 +44,5 @@ nav div span{
     width: 30px;
 }
 nav img{
-    width: 50px;
+    width: 40px;
 }
