@@ -38,11 +38,14 @@ nav{
     justify-content: space-between;
     padding: 0 12px;
 }
-nav div{
+nav div:nth-child(2){
     display: flex;
     flex-direction: column;
     height: 23px;
     justify-content: space-between;
+}
+nav div:nth-child(3){
+    display: none;
 }
 nav div span{
     background-color: black;
@@ -69,4 +72,31 @@ section .funcionarios{
 section .funcionarios div img{
     width: 100px;
 }
-@media
+@media(min-width:580px){
+    header{
+        background-image: url(../images/bob-hamburguer-siri.png);
+        background-size: cover;
+        height: 500px;
+    }
+    nav div a{
+        text-decoration: none;
+        font-size: 14pt;
+    }
+    nav div:nth-child(2){
+        display: none;
+    }
+    nav div:nth-child(3){
+        display: block;
+    }
+    section .funcionarios{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 99vw;
+    }
+}
+@media(min-width:710px){
+    header{
+        background-image: url(../images/bob-hamburguer.jpg);
+    }
+}
